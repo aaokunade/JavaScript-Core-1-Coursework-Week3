@@ -21,7 +21,17 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function bushChecker() {}
+
+function bushChecker(colourArr) {
+  let colourCheck = colourArr.every(function (colour) {
+    return colour === "pink";
+  });
+  let msg = "Toxic! Leave bush alone!";
+  if (colourCheck === true) {
+    msg = "Bush is safe to eat from";
+  }
+  return msg;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

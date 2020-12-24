@@ -7,8 +7,8 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents() {
-
+function eligibleStudents([nam, numCnts]) {
+return nam[]
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

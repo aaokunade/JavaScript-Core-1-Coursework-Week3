@@ -15,7 +15,14 @@
   
 */
 
-function colonisers() {}
+
+function colonisers(allVoyagers) {
+  let colonized = allVoyagers.filter(function (voyager) {
+    return voyager[0] === "A" && voyager.includes("family");
+  });
+
+  return colonized;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
