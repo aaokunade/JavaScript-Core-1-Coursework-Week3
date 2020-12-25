@@ -7,8 +7,14 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents([nam, numCnts]) {
-return nam[]
+function eligibleStudents(arr) {
+  let std = [];
+  arr.forEach(function(stdArr){
+    if(stdArr[1] >= 8){
+      return std.push(stdArr[0]);
+    }
+  })
+  return std;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
