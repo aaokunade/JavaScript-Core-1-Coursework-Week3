@@ -131,6 +131,13 @@ function getLocationName(arr) {
 */
 function journeyPlanner(locations, transportMode) {
   // Implement the function body
+  let locationNames = [];
+  locations.forEach(function (arr) {
+    if (arr.includes(transportMode)) {
+      locationNames.push(arr[0]);
+    }
+  });
+  return locationNames;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

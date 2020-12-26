@@ -11,7 +11,7 @@ function eligibleStudents(arr) {
   let std = [];
   arr.forEach(function(stdArr){
     if(stdArr[1] >= 8){
-      return std.push(stdArr[0]);
+      std.push(stdArr[0]);
     }
   })
   return std;
